@@ -28,6 +28,7 @@ The difference between stacks and queues is in removing. In a stack we remove th
 ![Implementation of Deque using doubly linked list - GeeksforGeeks](https://media.geeksforgeeks.org/wp-content/uploads/deque_dll.jpg)
 # Binary Search Tree
 ![Binary Search Tree - GeeksforGeeks](https://media.geeksforgeeks.org/wp-content/uploads/BSTSearch.png)
+
 **Binary Search Tree**  is a node-based binary tree data structure which has the following properties:
 
 -   The left subtree of a node contains only nodes with keys lesser than the node’s key.
