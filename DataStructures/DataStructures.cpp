@@ -9,6 +9,7 @@
 #include "LinkedFifo.h"
 #include "BSTree.h"
 #include "heap.h"
+#include "HashTable.h"
 
 int main()
 {
@@ -27,6 +28,7 @@ int main()
         cout << "6 - Linked List FIFO Queue\n";
         cout << "7 - Binary Search Tree\n";
         cout << "8 - Priority queue based on heap\n";
+        cout << "9 - Hash Table\n";
         cout << "----------------------------------" << endl;
         cout << "0 - Exit" << endl;
         cout << "Selection: ";
@@ -332,6 +334,24 @@ int main()
             cout << endl << "Heap: ";
             h.printHeap();
             cout << endl;
+            system("pause");
+            break;
+        }
+        case 9:
+        {
+            system("CLS");
+            HashTable* h = new HashTable(50);
+            std::string names[] = { "julia", "zuzanna", "zofia", "lena", "maja", "hanna", "amelia", "alicja", "maria" , "aleksandra", "oliwia", "natalia", "wiktoria", "emilia", "antonina", "laura", "pola", "iga", "anna", "liliana", "antoni", "jakub", "jan", "szymon", "franciszek", "filip", "aleksander", "mikolaj", "wojciech", "kacper", "adam", "michal", "marcel", "stanislaw", "wiktor", "piotr", "igor", "leon", "nikodem", "mateusz" };
+            for (int i = 0; i < sizeof(names) / sizeof(std::string); i++)
+                h->insert(names[i]);
+
+            h->print();
+            std::cout << std::endl;
+            std::cout << "search: " << std::endl;
+            h->search("julia");
+            h->search("iga");
+            h->search("lena");
+            delete h;
             system("pause");
             break;
         }

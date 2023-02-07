@@ -133,6 +133,7 @@
     <ClCompile Include="BSTree.cpp" />
     <ClCompile Include="DataStructures.cpp" />
     <ClCompile Include="Element.cpp" />
+    <ClCompile Include="HashTable.cpp" />
     <ClCompile Include="heap.cpp" />
     <ClCompile Include="LinkedFifo.cpp" />
     <ClCompile Include="LinkedList.cpp" />
@@ -145,6 +146,7 @@
     <ClInclude Include="ArrayStack.h" />
     <ClInclude Include="BSTree.h" />
     <ClInclude Include="Element.h" />
+    <ClInclude Include="HashTable.h" />
     <ClInclude Include="heap.h" />
     <ClInclude Include="LinkedFifo.h" />
     <ClInclude Include="LinkedList.h" />
